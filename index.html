@@ -34,30 +34,29 @@
       color: var(--text);
     }
 
-    /* Hero-bild med fade */
-.hero {
-  width: 100%;
-  height: auto;
-  position: relative;
-  background-color: #0b1220;
-  margin-top: 10px;
-}
+    /* Hero-bild + fade */
+    .hero {
+      width: 100%;
+      position: relative;
+      background-color: #0b1220;
+      margin-top: 10px;
+    }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-/* Fade under bilden */
-.fade {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  background: linear-gradient(to bottom, rgba(11,18,32,0) 0%, #0b1220 100%);
-  margin-top: -180px; /* drar upp över bilden för snygg övergång */
-}
-    
+    .fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(to bottom, rgba(11,18,32,0) 0%, #0b1220 100%);
+    }
+
     /* Bibel-knapp */
     .bible-btn {
       display: inline-block;
@@ -135,8 +134,11 @@
   <!-- Titel -->
   <h1 class="title">Swish till Brödrerna o Systrarna</h1>
 
-  <!-- Bild -->
-  <div class="hero"></div>
+  <!-- Bild med fade -->
+  <div class="hero">
+    <img src="public/love.jpg" alt="vänlighet illustration" />
+    <div class="fade"></div>
+  </div>
 
   <!-- Bibel-knapp -->
   <div>
@@ -166,5 +168,6 @@
     <a href="about.html">Om initiativet</a> |
     <a href="contact.html">Kontakt</a>
   </footer>
+
 </body>
 </html>
