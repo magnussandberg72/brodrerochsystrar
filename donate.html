@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ge gåva – Swish till Brödrerna o Systrarna ♥️</title>
+  <title>Ge gåva – Brödrer & Systrar</title>
   <style>
     :root {
       --bg-dark: #0b1220;
@@ -26,24 +26,26 @@
       min-height: 100vh;
     }
 
-    header {
+    /* Titel */
+    .page-title {
       text-align: center;
-      background: linear-gradient(180deg, #1a2440, #0b1220);
-      padding: 50px 20px 40px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 600;
+      margin: 40px 0 6px;
     }
 
-    header h1 {
-      font-size: clamp(26px, 4vw, 38px);
-      margin: 0 0 10px;
-      color: var(--text);
+    .page-sub {
+      text-align: center;
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 30px;
     }
 
     main {
       flex: 1;
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 0 20px 40px;
     }
 
     .person-card {
@@ -56,7 +58,7 @@
     }
 
     .person-card h2 {
-      margin: 0 0 6px;
+      margin: 0 0 10px;
       color: var(--text);
     }
 
@@ -127,11 +129,10 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Ge gåva till Brödrer & Systrar ♥️</h1>
-    <p>Direkta swishgåvor – från hjärta till hjärta 🙏🏼</p>
-  </header>
+
+  <!-- Titel överst -->
+  <h1 class="page-title">Ge gåva till Brödrer & Systrar</h1>
+  <p class="page-sub">hjärtegåvor, via din swish</p>
 
   <!-- MAIN CONTENT -->
   <main>
@@ -143,7 +144,7 @@
       <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
       <p class="need"><strong>Mål:</strong> 1 000 kr</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=0760977497" class="swish-btn">💙 Swisha 0760977497</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0760977497">📋 Kopiera nummer</button>
       </div>
     </div>
@@ -156,7 +157,7 @@
       <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
       <p class="need"><strong>Mål:</strong> 3 000 kr</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=0728502584" class="swish-btn">💙 Swisha 072-8502584</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0728502584">📋 Kopiera nummer</button>
       </div>
     </div>
@@ -169,7 +170,7 @@
       <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
       <p class="need"><strong>Mål:</strong> 1 000 kr</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=0727365383" class="swish-btn">💙 Swisha 072-7365383</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0727365383">📋 Kopiera nummer</button>
       </div>
     </div>
