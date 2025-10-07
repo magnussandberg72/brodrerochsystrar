@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ge gåva – Swish till Brödrerna o Systrarna ♥️</title>
+  <style>
+    :root {
+      --bg-dark: #0b1220;
+      --card: #141c33;
+      --text: #f2f5ff;
+      --accent: #7aa2ff;
+      --muted: #b7c3ea;
+      --btn-bg: #7aa2ff;
+      --btn-text: #06122a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(180deg, #1a2440, #0b1220);
+      padding: 50px 20px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      font-size: clamp(26px, 4vw, 38px);
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .person-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .person-card h2 {
+      margin: 0 0 6px;
+      color: var(--text);
+    }
+
+    .person-info {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .need {
+      margin: 4px 0;
+      color: #dbe3ff;
+    }
+
+    .swish-row {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .swish-btn {
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .swish-btn:hover {
+      background: #9bb8ff;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .copy-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 30px 20px 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: #0a1120;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Ge gåva till Brödrer & Systrar ♥️</h1>
+    <p>Direkta swishgåvor – från hjärta till hjärta 🙏🏼</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PERSON 1 -->
+    <div class="person-card">
+      <h2>Mathilda</h2>
+      <p class="person-info">Har låg inkomst och behöver hjälp till mat.</p>
+      <p class="need"><strong>Behöver:</strong> mat</p>
+      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
+      <p class="need"><strong>Mål:</strong> 1 000 kr</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=0760977497" class="swish-btn">💙 Swisha 0760977497</a>
+        <button class="copy-btn" data-number="0760977497">📋 Kopiera nummer</button>
+      </div>
+    </div>
+
+    <!-- PERSON 2 -->
+    <div class="person-card">
+      <h2>Magnus – Kalix</h2>
+      <p class="person-info"><strong>Admin för sajten.</strong> Har låg inkomst och behöver stöd till liv och utveckling av projektet.</p>
+      <p class="need"><strong>Behöver:</strong> mat, kläder, lön/gåvor för appen och dess utveckling</p>
+      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
+      <p class="need"><strong>Mål:</strong> 3 000 kr</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=0728502584" class="swish-btn">💙 Swisha 072-8502584</a>
+        <button class="copy-btn" data-number="0728502584">📋 Kopiera nummer</button>
+      </div>
+    </div>
+
+    <!-- PERSON 3 -->
+    <div class="person-card">
+      <h2>Tapani – Luleå</h2>
+      <p class="person-info">Har låg inkomst och behöver hjälp till grundläggande behov.</p>
+      <p class="need"><strong>Behöver:</strong> mat, kläder, möbler</p>
+      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
+      <p class="need"><strong>Mål:</strong> 1 000 kr</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=0727365383" class="swish-btn">💙 Swisha 072-7365383</a>
+        <button class="copy-btn" data-number="0727365383">📋 Kopiera nummer</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html">Tillbaka till start</a> |
+    <a href="orgs.html">Organisationer</a> |
+    <a href="about.html">Om initiativet</a> |
+    <a href="contact.html">Kontakt</a>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".copy-btn");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const num = btn.dataset.number;
+          try {
+            await navigator.clipboard.writeText(num);
+            const old = btn.textContent;
+            btn.textContent = "✅ Kopierat!";
+            setTimeout(() => (btn.textContent = old), 1500);
+          } catch (e) {
+            alert("Kunde inte kopiera numret.");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
