@@ -37,12 +37,13 @@
     /* Hero-bild */
     .hero {
   width: 100%;
-  height: 100vh;
+  height: 80vh; /* lite lägre höjd så den börjar under titeln */
   background-image: url("public/love.jpg");
-  background-position: center center; /* centrera bilden horisontellt & vertikalt */
+  background-position: top center; /* flyttar bilden uppåt */
   background-repeat: no-repeat;
-  background-size: contain; /* visa hela bilden */
-  background-color: #0b1220; /* mjuk bakgrund om bilden inte fyller hela ytan */
+  background-size: contain; /* hela bilden syns */
+  background-color: #0b1220; /* fyll ut ytan snyggt */
+  margin-top: 10px; /* liten luft under titeltexten */
     }
 
     /* Knappar */
@@ -98,7 +99,7 @@
 <body>
 
   <!-- Titel överst -->
-  <h1 class="title">Swish till Brödrerna o Systrarna ♥️</h1>
+  <h1 class="title">Swish till Brödrerna o Systrarna </h1>
 
   <!-- Bild -->
   <div class="hero"></div>
@@ -106,7 +107,7 @@
   <!-- Bibel-knapp -->
   <div>
     <a href="https://app.bible.com/FCPc/ilyCM8GCtC" class="bible-btn" target="_blank" rel="noopener">
-      Gratis Bibel på nätet 🙏🏼
+      Bibeln på nätet 🙏🏼
     </a>
   </div>
 
