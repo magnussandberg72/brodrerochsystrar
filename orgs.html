@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Organisationer & Föreningar – Swish till Brödrerna o Systrarna ♥️</title>
+  <title>Organisationer & Föreningar – Brödrer & Systrar</title>
   <style>
     :root {
       --bg-dark: #0b1220;
@@ -26,30 +26,25 @@
       min-height: 100vh;
     }
 
-    header {
+    .page-title {
       text-align: center;
-      background: linear-gradient(180deg, #1a2440, #0b1220);
-      padding: 50px 20px 40px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 600;
+      margin: 40px 0 6px;
     }
 
-    header h1 {
-      font-size: clamp(26px, 4vw, 38px);
-      margin: 0 0 10px;
-      color: var(--text);
+    .page-sub {
+      text-align: center;
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 30px;
     }
 
     main {
       flex: 1;
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .intro {
-      text-align: center;
-      color: var(--muted);
-      margin-bottom: 40px;
+      padding: 0 20px 40px;
     }
 
     .org-card {
@@ -128,50 +123,41 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Organisationer & Föreningar ♥️</h1>
-    <p>Hjälp de som varje dag hjälper andra 🙏🏼</p>
-  </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- Titel -->
+  <h1 class="page-title">Organisationer & Föreningar</h1>
+  <p class="page-sub">hjärtegåvor, via din swish</p>
+
+  <!-- MAIN -->
   <main>
-    <p class="intro">
-      Många föreningar i Sverige kämpar för att hjälpa andra – men de behöver också stöd.  
-      Här kan du swisha direkt till några av dem. Varje gåva gör skillnad i deras arbete.
-    </p>
-
-    <!-- ORG 1 -->
     <div class="org-card">
       <h2>Hemlösa.se</h2>
       <p>Hjälper hemlösa i Sverige med mat, kläder och stöd.</p>
       <p><strong>Swish:</strong> 123 138 46 35</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=1231384635" class="swish-btn">💙 Swisha 123 138 46 35</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="1231384635">📋 Kopiera nummer</button>
         <a href="https://hemlosa.se" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
       </div>
     </div>
 
-    <!-- ORG 2 -->
     <div class="org-card">
       <h2>Vilda Kidz</h2>
       <p>Skapar glädje och trygghet för barn i utsatta situationer.</p>
       <p><strong>Swish:</strong> 123 538 32 29</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=1235383229" class="swish-btn">💙 Swisha 123 538 32 29</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="1235383229">📋 Kopiera nummer</button>
         <a href="https://vildakidz.se" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
       </div>
     </div>
 
-    <!-- ORG 3 -->
     <div class="org-card">
       <h2>Love and Hope</h2>
       <p>Kämpar mot människohandel och för utsatta kvinnor och barn.</p>
       <p><strong>Swish:</strong> 900 5067</p>
       <div class="swish-row">
-        <a href="swish://paymentrequest?token=9005067" class="swish-btn">💙 Swisha 900 5067</a>
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="9005067">📋 Kopiera nummer</button>
         <a href="https://loveandhope.org" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
       </div>
@@ -197,7 +183,7 @@
             const old = btn.textContent;
             btn.textContent = "✅ Kopierat!";
             setTimeout(() => (btn.textContent = old), 1500);
-          } catch (e) {
+          } catch {
             alert("Kunde inte kopiera numret.");
           }
         });
