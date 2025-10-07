@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organisationer & Föreningar – Swish till Brödrerna o Systrarna ♥️</title>
+  <style>
+    :root {
+      --bg-dark: #0b1220;
+      --card: #141c33;
+      --text: #f2f5ff;
+      --accent: #7aa2ff;
+      --muted: #b7c3ea;
+      --btn-bg: #7aa2ff;
+      --btn-text: #06122a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(180deg, #1a2440, #0b1220);
+      padding: 50px 20px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      font-size: clamp(26px, 4vw, 38px);
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .intro {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .org-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .org-card h2 {
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    .org-card p {
+      margin: 6px 0;
+      color: #dbe3ff;
+    }
+
+    .swish-row {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .swish-btn {
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .swish-btn:hover {
+      background: #9bb8ff;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .copy-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 30px 20px 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: #0a1120;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Organisationer & Föreningar ♥️</h1>
+    <p>Hjälp de som varje dag hjälper andra 🙏🏼</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <p class="intro">
+      Många föreningar i Sverige kämpar för att hjälpa andra – men de behöver också stöd.  
+      Här kan du swisha direkt till några av dem. Varje gåva gör skillnad i deras arbete.
+    </p>
+
+    <!-- ORG 1 -->
+    <div class="org-card">
+      <h2>Hemlösa.se</h2>
+      <p>Hjälper hemlösa i Sverige med mat, kläder och stöd.</p>
+      <p><strong>Swish:</strong> 123 132 56 33</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=1231325633" class="swish-btn">💙 Swisha 123 132 56 33</a>
+        <button class="copy-btn" data-number="1231325633">📋 Kopiera nummer</button>
+        <a href="https://hemlosa.se" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
+      </div>
+    </div>
+
+    <!-- ORG 2 -->
+    <div class="org-card">
+      <h2>Vilda Kidz</h2>
+      <p>Skapar glädje och trygghet för barn i utsatta situationer.</p>
+      <p><strong>Swish:</strong> 123 094 30 23</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=1230943023" class="swish-btn">💙 Swisha 123 094 30 23</a>
+        <button class="copy-btn" data-number="1230943023">📋 Kopiera nummer</button>
+        <a href="https://vildakidz.se" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
+      </div>
+    </div>
+
+    <!-- ORG 3 -->
+    <div class="org-card">
+      <h2>Love and Hope</h2>
+      <p>Kämpar mot människohandel och för utsatta kvinnor och barn.</p>
+      <p><strong>Swish:</strong> 123 900 42 43</p>
+      <div class="swish-row">
+        <a href="swish://paymentrequest?token=1239004243" class="swish-btn">💙 Swisha 123 900 42 43</a>
+        <button class="copy-btn" data-number="1239004243">📋 Kopiera nummer</button>
+        <a href="https://loveandhope.se" target="_blank" class="copy-btn">🌐 Besök hemsida</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="index.html">Tillbaka till start</a> |
+    <a href="donate.html">Se personer i behov</a> |
+    <a href="about.html">Om initiativet</a> |
+    <a href="contact.html">Kontakt</a>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".copy-btn[data-number]");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const num = btn.dataset.number;
+          try {
+            await navigator.clipboard.writeText(num);
+            const old = btn.textContent;
+            btn.textContent = "✅ Kopierat!";
+            setTimeout(() => (btn.textContent = old), 1500);
+          } catch (e) {
+            alert("Kunde inte kopiera numret.");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
