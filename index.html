@@ -18,28 +18,52 @@
     body {
       margin: 0;
       font-family: "Inter", system-ui, sans-serif;
-      background: var(--bg-dark);
+      background: radial-gradient(circle at center top, rgba(122,162,255,0.2), transparent 70%),
+                  var(--bg-dark);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
+    /* Ljusgloria bakom rubrik */
     header {
-      background: linear-gradient(180deg, var(--bg-light), var(--bg-dark));
+      position: relative;
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 80px 20px 50px;
       border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: radial-gradient(circle at center 30%, rgba(255,255,255,0.07), transparent 60%),
+                  linear-gradient(180deg, var(--bg-light), var(--bg-dark));
+      box-shadow: 0 0 40px rgba(255,255,255,0.05) inset;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(40px);
+      z-index: 0;
     }
 
     header h1 {
-      font-size: clamp(28px, 4vw, 42px);
+      position: relative;
+      font-size: clamp(30px, 4vw, 46px);
       margin: 0 0 20px;
-      color: var(--text);
+      z-index: 1;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     }
 
     .bible-btn {
+      position: relative;
+      z-index: 1;
       background: var(--accent);
       color: var(--button-text);
       border: none;
@@ -49,17 +73,18 @@
       font-size: 16px;
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
     }
 
     .bible-btn:hover {
       background: #9bb8ff;
+      transform: scale(1.05);
     }
 
     main {
       max-width: 760px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
@@ -70,24 +95,25 @@
 
     .quote {
       font-style: italic;
-      margin: 24px 0;
+      margin: 28px 0;
       color: #b7c3ea;
     }
 
     .main-btn {
       display: inline-block;
-      margin-top: 24px;
+      margin-top: 28px;
       background: var(--button-bg);
       color: var(--button-text);
       padding: 14px 28px;
       border-radius: 14px;
       font-weight: 700;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
     }
 
     .main-btn:hover {
       background: #9bb8ff;
+      transform: scale(1.05);
     }
 
     footer {
@@ -108,9 +134,40 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    /* Ljuspartiklar */
+    .glow {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .glow span {
+      position: absolute;
+      width: 4px; height: 4px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      from { transform: translateY(100vh) scale(0.6); opacity: 0; }
+      50% { opacity: 1; }
+      to { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
   </style>
 </head>
 <body>
+  <div class="glow">
+    <span style="left:10%; animation-delay:0s;"></span>
+    <span style="left:30%; animation-delay:3s;"></span>
+    <span style="left:60%; animation-delay:1.5s;"></span>
+    <span style="left:80%; animation-delay:4s;"></span>
+    <span style="left:50%; animation-delay:2s;"></span>
+  </div>
+
   <!-- HEADER -->
   <header>
     <h1>Swish till Brödrerna o Systrarna ♥️</h1>
@@ -119,7 +176,7 @@
     </a>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main>
     <p>I en tid där många har det svårt, vill vi stå tillsammans.</p>
     <p>Här samlas bröder och systrar som behöver hjälp till mat, värme och vardag.<br>
