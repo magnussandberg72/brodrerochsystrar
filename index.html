@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swish till Brödrerna o Systrarna ♥️</title>
+  <style>
+    :root {
+      --bg-dark: #0b1220;
+      --bg-light: #1a2440;
+      --text: #f2f5ff;
+      --accent: #7aa2ff;
+      --heart: #ff9fb5;
+      --button-bg: #7aa2ff;
+      --button-text: #06122a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(180deg, var(--bg-light), var(--bg-dark));
+      text-align: center;
+      padding: 60px 20px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 0 0 20px;
+      color: var(--text);
+    }
+
+    .bible-btn {
+      background: var(--accent);
+      color: var(--button-text);
+      border: none;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .bible-btn:hover {
+      background: #9bb8ff;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    main p {
+      margin-bottom: 16px;
+      color: #dbe3ff;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 24px 0;
+      color: #b7c3ea;
+    }
+
+    .main-btn {
+      display: inline-block;
+      margin-top: 24px;
+      background: var(--button-bg);
+      color: var(--button-text);
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .main-btn:hover {
+      background: #9bb8ff;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 30px 20px 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: #0a1120;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Swish till Brödrerna o Systrarna ♥️</h1>
+    <a href="https://app.bible.com/FCPc/ilyCM8GCtC" class="bible-btn" target="_blank" rel="noopener">
+      Gratis Bibel på nätet 🙏🏼
+    </a>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <p>I en tid där många har det svårt, vill vi stå tillsammans.</p>
+    <p>Här samlas bröder och systrar som behöver hjälp till mat, värme och vardag.<br>
+       Och här möts de som kan — och vill — ge lite kärlek tillbaka.</p>
+    <p>Med ett enkelt Swish kan du vara skillnaden mellan oro och ro.</p>
+
+    <p class="quote">✝️ “Den som ger åt den fattige, lånar åt Herren, och Han ska löna honom för det han gjort.”<br>
+    (Ordspråksboken 19:17)</p>
+
+    <p>♥️ Tack för att du delar, bryr dig och visar kärlek i handling.</p>
+
+    <a href="donate.html" class="main-btn">Se de som behöver hjälp</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="orgs.html">Organisationer & föreningar</a> |
+    <a href="about.html">Om initiativet</a> |
+    <a href="contact.html">Kontakt</a>
+  </footer>
+</body>
+</html>
