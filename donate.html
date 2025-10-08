@@ -9,10 +9,10 @@
       --bg-dark: #0b1220;
       --card: #141c33;
       --text: #f2f5ff;
-      --accent: #7aa2ff;
       --muted: #b7c3ea;
-      --btn-bg: #7aa2ff;
-      --btn-text: #06122a;
+      --btn-bg: #2a2e39;
+      --btn-bg-hover: #3a3f4d;
+      --btn-text: #ffffff;
     }
 
     body {
@@ -26,15 +26,14 @@
       min-height: 100vh;
     }
 
-    /* Titel */
-    .page-title {
+    h1.page-title {
       text-align: center;
       font-size: clamp(26px, 4vw, 38px);
       font-weight: 600;
       margin: 40px 0 6px;
     }
 
-    .page-sub {
+    p.page-sub {
       text-align: center;
       font-size: 16px;
       color: var(--muted);
@@ -64,7 +63,7 @@
 
     .person-info {
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .need {
@@ -80,32 +79,25 @@
       gap: 10px;
     }
 
-    .swish-btn {
+    /* 🔘 Nya mörka knappar */
+    .swish-btn, .copy-btn {
       background: var(--btn-bg);
       color: var(--btn-text);
-      font-weight: 700;
-      padding: 12px 24px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .swish-btn:hover {
-      background: #9bb8ff;
-    }
-
-    .copy-btn {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.3);
-      color: var(--text);
-      padding: 10px 16px;
+      font-weight: 600;
+      border: none;
       border-radius: 12px;
+      padding: 12px 24px;
       cursor: pointer;
-      transition: all 0.3s;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     }
 
-    .copy-btn:hover {
-      background: rgba(255,255,255,0.1);
+    .swish-btn:hover, .copy-btn:hover {
+      background: var(--btn-bg-hover);
+      transform: scale(1.04);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.35);
     }
 
     footer {
@@ -117,32 +109,27 @@
     }
 
     footer a {
-      color: var(--accent);
+      color: var(--muted);
       text-decoration: none;
       margin: 0 8px;
       font-weight: 500;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      color: var(--text);
     }
   </style>
 </head>
 <body>
 
-  <!-- Titel överst -->
   <h1 class="page-title">Ge gåva till Brödrer & Systrar</h1>
-  <p class="page-sub">hjärtegåvor, via din swish</p>
+  <p class="page-sub">Hjärtegåvor via din Swish 💖</p>
 
-  <!-- MAIN CONTENT -->
   <main>
     <!-- PERSON 1 -->
     <div class="person-card">
       <h2>Mathilda</h2>
-      <p class="person-info">Har låg inkomst och behöver hjälp till mat.</p>
-      <p class="need"><strong>Behöver:</strong> mat</p>
-      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
-      <p class="need"><strong>Mål:</strong> 1 000 kr</p>
+      <p class="person-info">Behöver hjälp till mat och basbehov.</p>
       <div class="swish-row">
         <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0760977497">📋 Kopiera nummer</button>
@@ -152,10 +139,7 @@
     <!-- PERSON 2 -->
     <div class="person-card">
       <h2>Magnus – Kalix</h2>
-      <p class="person-info"><strong>Admin för sajten.</strong> Har låg inkomst och behöver stöd till liv och utveckling av projektet.</p>
-      <p class="need"><strong>Behöver:</strong> mat, kläder, lön/gåvor för appen och dess utveckling</p>
-      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
-      <p class="need"><strong>Mål:</strong> 3 000 kr</p>
+      <p class="person-info">Admin för sajten. Behöver stöd till liv och utveckling av projekten.</p>
       <div class="swish-row">
         <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0728502584">📋 Kopiera nummer</button>
@@ -165,10 +149,7 @@
     <!-- PERSON 3 -->
     <div class="person-card">
       <h2>Tapani – Luleå</h2>
-      <p class="person-info">Har låg inkomst och behöver hjälp till grundläggande behov.</p>
-      <p class="need"><strong>Behöver:</strong> mat, kläder, möbler</p>
-      <p class="need"><strong>Rekommenderad gåva:</strong> 50–100 kr</p>
-      <p class="need"><strong>Mål:</strong> 1 000 kr</p>
+      <p class="person-info">Behöver hjälp till mat, kläder och hem.</p>
       <div class="swish-row">
         <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0727365383">📋 Kopiera nummer</button>
@@ -176,15 +157,15 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <a href="index.html">Tillbaka till start</a> |
+    <a href="index.html">Hem</a> |
     <a href="orgs.html">Organisationer</a> |
     <a href="about.html">Om initiativet</a> |
     <a href="contact.html">Kontakt</a>
   </footer>
 
   <script>
+    // 📋 Kopiera Swish-nummer
     document.addEventListener("DOMContentLoaded", () => {
       const buttons = document.querySelectorAll(".copy-btn");
       buttons.forEach(btn => {
@@ -195,12 +176,13 @@
             const old = btn.textContent;
             btn.textContent = "✅ Kopierat!";
             setTimeout(() => (btn.textContent = old), 1500);
-          } catch (e) {
+          } catch {
             alert("Kunde inte kopiera numret.");
           }
         });
       });
     });
   </script>
+
 </body>
 </html>
