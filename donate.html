@@ -20,7 +20,7 @@
       font-family: "Inter", system-ui, sans-serif;
       background: var(--bg-dark);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -57,7 +57,7 @@
     }
 
     .person-card h2 {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       color: var(--text);
     }
 
@@ -79,7 +79,7 @@
       gap: 10px;
     }
 
-    /* 🔘 Nya mörka knappar */
+    /* 🔘 Knappstil */
     .swish-btn, .copy-btn {
       background: var(--btn-bg);
       color: var(--btn-text);
@@ -98,6 +98,14 @@
       background: var(--btn-bg-hover);
       transform: scale(1.04);
       box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+    }
+
+    .helper-text {
+      margin-top: 20px;
+      font-size: 15px;
+      color: rgba(255,255,255,0.85);
+      font-style: italic;
+      line-height: 1.6;
     }
 
     footer {
@@ -123,36 +131,46 @@
 <body>
 
   <h1 class="page-title">Ge gåva till Brödrer & Systrar</h1>
-  <p class="page-sub">Hjärtegåvor via din Swish 💖</p>
+  <p class="page-sub">Du som hjälper? 💖 Sänd det du tycker — även 50 eller 100 kr är mycket värt om man inget har 🙏🏼✝️<br>
+  Märk swishningen med <strong>“The Magnus”</strong>, så vet mottagaren vart hjälpen kom från.</p>
 
   <main>
-    <!-- PERSON 1 -->
+    <!-- MATHILDA -->
     <div class="person-card">
-      <h2>Mathilda</h2>
-      <p class="person-info">Behöver hjälp till mat och basbehov.</p>
+      <h2>Stötta ♥️ Mathilda</h2>
+      <p class="need"><strong>Nam n:</strong> Mathilda</p>
+      <p class="need"><strong>Bor i:</strong> Luleå</p>
+      <p class="need"><strong>Söker hjälp till:</strong> Mat, vinterjacka</p>
+      <p class="need"><strong>Målsumma:</strong> 1 500 kr</p>
       <div class="swish-row">
         <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0760977497">📋 Kopiera nummer</button>
       </div>
     </div>
 
-    <!-- PERSON 2 -->
+    <!-- TAPPE -->
     <div class="person-card">
-      <h2>Magnus – Kalix</h2>
-      <p class="person-info">Admin för sajten. Behöver stöd till liv och utveckling av projekten.</p>
-      <div class="swish-row">
-        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
-        <button class="copy-btn" data-number="0728502584">📋 Kopiera nummer</button>
-      </div>
-    </div>
-
-    <!-- PERSON 3 -->
-    <div class="person-card">
-      <h2>Tapani – Luleå</h2>
-      <p class="person-info">Behöver hjälp till mat, kläder och hem.</p>
+      <h2>Stötta ♥️ Tappe</h2>
+      <p class="need"><strong>Namn:</strong> Tappe</p>
+      <p class="need"><strong>Bor i:</strong> Luleå</p>
+      <p class="need"><strong>Söker hjälp till:</strong> Mat, fiskekort, möbler</p>
+      <p class="need"><strong>Målsumma:</strong> 2 000 kr</p>
       <div class="swish-row">
         <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
         <button class="copy-btn" data-number="0727365383">📋 Kopiera nummer</button>
+      </div>
+    </div>
+
+    <!-- THE MAGNUS -->
+    <div class="person-card">
+      <h2>Stötta ♥️ The Magnus (Admin)</h2>
+      <p class="need"><strong>Namn:</strong> The Magnus</p>
+      <p class="need"><strong>Bor i:</strong> Kalix</p>
+      <p class="need"><strong>Söker hjälp till:</strong> Lön och support till sajten, samt bygget av fler sajter och appar</p>
+      <p class="need"><strong>Målsumma:</strong> 3 000 kr – glad för varje peng ♥️</p>
+      <div class="swish-row">
+        <a href="swish://open" class="swish-btn">💙 Öppna Swish-app</a>
+        <button class="copy-btn" data-number="0728502584">📋 Kopiera nummer</button>
       </div>
     </div>
   </main>
